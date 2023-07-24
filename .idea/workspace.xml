@@ -5,30 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58201b8f-0c18-4eb1-9e5e-ba730e1040de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/icons/icons8-linkedin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/japanese_restaurant_inakaya.glb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/me.gltf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/add-drop-helper/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/add-drop-helper/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/music-transcript/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/music-transcript/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/pics/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/pics/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/pics/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/pics/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/pics/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/side-banner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ContactMe.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Project.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Skills.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/WorkExperiences.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/aboutMe.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +84,7 @@
       <workItem from="1688666712034" duration="9413000" />
       <workItem from="1688857820077" duration="24378000" />
       <workItem from="1689102793094" duration="9220000" />
-      <workItem from="1690185870543" duration="4598000" />
+      <workItem from="1690185870543" duration="5099000" />
     </task>
     <servers />
   </component>
