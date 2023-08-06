@@ -1,6 +1,4 @@
 "use client"
-import Anime from "react-anime";
-
 export default function Hero(){
     return       <section className="hero bg-base-200 text-base-content snap-start min-h-screen">
         <div className="hero-content text-center">

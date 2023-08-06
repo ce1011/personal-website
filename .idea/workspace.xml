@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58201b8f-0c18-4eb1-9e5e-ba730e1040de" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/hero.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +44,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Users/paco/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/231.9011.35/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "ts.external.directory.path": "/Users/paco/Desktop/personal-website/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -86,7 +85,7 @@
       <workItem from="1689102793094" duration="9220000" />
       <workItem from="1690185870543" duration="8287000" />
       <workItem from="1690351855131" duration="1448000" />
-      <workItem from="1691299282900" duration="9567000" />
+      <workItem from="1691299282900" duration="9616000" />
     </task>
     <servers />
   </component>
