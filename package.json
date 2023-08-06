@@ -9,34 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@notion-render/bookmark-plugin": "^0.0.2",
-    "@notion-render/client": "^0.0.2",
-    "@notion-render/hljs-plugin": "^0.0.2",
-    "@notionhq/client": "^2.2.9",
     "@types/node": "20.3.3",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
     "autoprefixer": "10.4.14",
     "flowbite": "^1.7.0",
     "flowbite-react": "^0.4.10",
-    "gray-matter": "^4.0.3",
     "mongodb": "^5.7.0",
     "next": "13.4.8",
     "postcss": "8.4.24",
     "react": "18.2.0",
-    "react-anime": "^4.1.1",
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
     "react-markdown": "^8.0.7",
     "react-simple-typewriter": "^5.0.1",
     "tailwindcss": "3.3.2",
-    "three": "^0.155.0",
-    "typescript": "5.1.6",
-    "typewriter-effect": "^2.20.1",
-    "vanta": "^0.5.24"
+    "typescript": "5.1.6"
   },
   "devDependencies": {
-    "@types/three": "^0.155.0",
     "daisyui": "^3.1.7"
   }
 }
