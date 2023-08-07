@@ -27,9 +27,9 @@ export const getServerSideProps: GetServerSideProps<{
 
 export default function PostsPage ({posts}:InferGetServerSidePropsType<typeof getServerSideProps>) {
     return (
-
         <div className="bg-base-100" >
-            <h1 className="text-5xl font-bold text-center my-8">Blog</h1>
+
+            <h1 className="text-5xl font-bold text-center py-8">Blog</h1>
             <p className="text-center">
                 <Typewriter
                     words={['在網絡的角落相遇，也是一種美好的緣分。', 'Meeting in this corner of the internet is also a beautiful destiny.', '於網海深處相遇，亦屬幽緣天註。', '\n' +

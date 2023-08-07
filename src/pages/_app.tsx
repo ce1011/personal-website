@@ -1,9 +1,12 @@
-import '../app/globals.css';
+import type { AppProps } from "next/app";
+import "@/app/globals.css";
 
-import type { AppProps } from 'next/app';
-
-const MyApp = ({ Component, pageProps }: AppProps) => (
-    <Component {...pageProps} />
-);
+function MyApp({ Component, pageProps }: AppProps) {
+    return (
+        <div data-theme="dark" className="min-h-screen">
+            <Component {...pageProps} />
+        </div>
+    );
+}
 
 export default MyApp;
