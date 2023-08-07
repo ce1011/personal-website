@@ -3,7 +3,8 @@
 import React, { useEffect, useState } from 'react';
 import {Typewriter} from "react-simple-typewriter";
 import BlogCard from "@/components/Blog/PostCard";
-import {GET} from "../api/posts/route";
+import type { InferGetServerSidePropsType, GetServerSideProps } from 'next'
+import RootLayout from "@/components/layoutForPageRouter";
 
 interface Post {
     _id: string;
@@ -11,20 +12,22 @@ interface Post {
     content: string;
 }
 
-async function getData() {
-const host = process.env.NODE_ENV === 'production' ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000'
+export const getServerSideProps: GetServerSideProps<{
+    posts: Post[];
+}> = async () => {
+    const host = process.env.NODE_ENV === 'production' ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000';
 
     const response = await fetch(`${host}/api/posts`);
     const posts = await response.json();
-    return posts
+    console.log("the post is ", posts);
 
-}
+    return { props: { posts } };
+};
 
-export default async function PostsPage () {
 
-    const posts = await JSON.parse(JSON.stringify(await  getData()));
-
+export default function PostsPage ({posts}:InferGetServerSidePropsType<typeof getServerSideProps>) {
     return (
+
         <div className="bg-base-100" >
             <h1 className="text-5xl font-bold text-center my-8">Blog</h1>
             <p className="text-center">
@@ -39,14 +42,16 @@ export default async function PostsPage () {
                     delaySpeed={2000}
                 />
 
-            <br/> </p>
+                <br/>
+            </p>
             <div className="grid grid-cols-3 gap-4 mx-4">
                 {posts.map((post : Post) => {
                     return (
-                        <BlogCard postId={post._id} title={post.title} content={post.content} />
+                        <BlogCard key={post._id} postId={post._id} title={post.title} content={post.content} />
                     )
                 })}
             </div>
         </div>
+
     );
 };

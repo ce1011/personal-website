@@ -18,9 +18,9 @@ export default function BlogCard(props : BlogCardProps){
                 </p>
             </h5>
             <p className="font-normal text-gray-700 dark:text-gray-400">
-                <p>
+
                     {props.content}
-                </p>
+
             </p>
         </Card>
     )
