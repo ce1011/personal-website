@@ -14,10 +14,7 @@ interface Post {
 }
 
 async function getData() {
-    const dev = process.env.NODE_ENV !== 'production';
-    const server = dev ? 'http://localhost:3000' : 'https://pacoauyeung.com';
-
-    const response = await fetch(`${server}/api/posts`);
+    const response = await fetch('http://127.0.0.1:3000/api/posts');
     const posts = await response.json();
     return posts
 
