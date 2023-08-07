@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58201b8f-0c18-4eb1-9e5e-ba730e1040de" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/posts/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/posts/route.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/blog/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/blog/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,11 +65,11 @@
       <recent name="$PROJECT_DIR$/public/projects/assessment" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/components/Home" />
       <recent name="$PROJECT_DIR$/src/app/api/posts" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/projects" />
-      <recent name="$PROJECT_DIR$/public/projects/pics" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -86,7 +88,7 @@
       <workItem from="1690185870543" duration="8287000" />
       <workItem from="1690351855131" duration="1448000" />
       <workItem from="1691299282900" duration="11983000" />
-      <workItem from="1691380788379" duration="4430000" />
+      <workItem from="1691380788379" duration="5489000" />
     </task>
     <servers />
   </component>

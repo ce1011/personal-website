@@ -3,9 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import {Typewriter} from "react-simple-typewriter";
 import BlogCard from "@/components/Blog/PostCard";
-import {connectToDatabase} from "@/lib/mongo";
-import {NextResponse} from "next/server";
-import {headers} from "next/headers";
+import {GET} from "../api/posts/route";
 
 interface Post {
     _id: string;
@@ -14,7 +12,9 @@ interface Post {
 }
 
 async function getData() {
-    const response = await fetch(`https://${process.env.VERCEL_URL}/api/posts`);
+const host = process.env.NODE_ENV === 'production' ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000'
+
+    const response = await fetch(`${host}/api/posts`);
     const posts = await response.json();
     return posts
 
@@ -22,7 +22,7 @@ async function getData() {
 
 export default async function PostsPage () {
 
-    const posts = await getData()
+    const posts = await JSON.parse(JSON.stringify(await  getData()));
 
     return (
         <div className="bg-base-100" >
