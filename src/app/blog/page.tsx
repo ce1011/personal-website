@@ -3,6 +3,9 @@
 import React, { useEffect, useState } from 'react';
 import {Typewriter} from "react-simple-typewriter";
 import BlogCard from "@/components/Blog/PostCard";
+import {connectToDatabase} from "@/lib/mongo";
+import {NextResponse} from "next/server";
+import {headers} from "next/headers";
 
 interface Post {
     _id: string;
@@ -11,9 +14,13 @@ interface Post {
 }
 
 async function getData() {
-    const response = await fetch('http://localhost:3000/api/posts');
+    const dev = process.env.NODE_ENV !== 'production';
+    const server = dev ? 'http://localhost:3000' : 'https://pacoauyeung.com';
+
+    const response = await fetch(`${server}/api/posts`);
     const posts = await response.json();
     return posts
+
 }
 
 export default async function PostsPage () {
