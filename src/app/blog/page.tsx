@@ -14,7 +14,7 @@ interface Post {
 }
 
 async function getData() {
-    const response = await fetch(`${process.env.VERCL_URL}/api/posts`);
+    const response = await fetch(`${process.env.VERCEL_URL}/api/posts`);
     const posts = await response.json();
     return posts
 
