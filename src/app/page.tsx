@@ -8,6 +8,7 @@ import ContactMe from "@/components/Home/ContactMe";
 export default function Home() {
   return (
 <>
+
       <Hero />
         <WorkExperience />
         <Skills/>
