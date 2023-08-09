@@ -80,6 +80,7 @@ export default function PostsPage({ post }: InferGetServerSidePropsType<typeof g
                     </div>
                 </address>
                 <h1 className="mb-4 text-3xl font-extrabold leading-tight lg:mb-6 lg:text-4xl text-white">{post.title}</h1>
+                <h3 className="mb-4 text-xl font-medium leading-tight lg:mb-6 lg:text-xl text-white">{readingTime.default(post.content).text}</h3>
             </header>
             <div className=" prose">
                 <ReactMarkdown>{post.content}</ReactMarkdown>
