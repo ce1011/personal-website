@@ -5,11 +5,13 @@ import {Typewriter} from "react-simple-typewriter";
 import BlogCard from "@/components/Blog/PostCard";
 import type { InferGetServerSidePropsType, GetServerSideProps } from 'next'
 import RootLayout from "@/components/layoutForPageRouter";
+import Footer from "@/components/Blog/Footer";
 
 interface Post {
     _id: string;
     title: string;
     content: string;
+    createAt: string;
 }
 
 export const getServerSideProps: GetServerSideProps<{
@@ -19,16 +21,16 @@ export const getServerSideProps: GetServerSideProps<{
 
     const response = await fetch(`${host}/api/posts`);
     const posts = await response.json();
-    console.log("the post is ", posts);
 
     return { props: { posts } };
+
 };
 
 
 export default function PostsPage ({posts}:InferGetServerSidePropsType<typeof getServerSideProps>) {
     return (
-        <div className="bg-base-100" >
-
+        <div className="flex flex-col bg-base-100 h-screen justify-between" >
+<div>
             <h1 className="text-5xl font-bold text-center py-8">Blog</h1>
             <p className="text-center">
                 <Typewriter
@@ -44,13 +46,15 @@ export default function PostsPage ({posts}:InferGetServerSidePropsType<typeof ge
 
                 <br/>
             </p>
-            <div className="grid grid-cols-3 gap-4 mx-4">
+</div>
+            <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-4 mx-4 justify-items-center my-8 justify-center" >
                 {posts.map((post : Post) => {
                     return (
-                        <BlogCard key={post._id} postId={post._id} title={post.title} content={post.content} />
+                            <BlogCard key={post._id} postId={post._id} title={post.title} content={post.content} createAt={post.createAt}/>
                     )
                 })}
             </div>
+            <Footer/>
         </div>
 
     );
