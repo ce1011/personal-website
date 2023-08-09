@@ -10,7 +10,7 @@ export default function Skills(){
             <h1 className="text-6xl pt-20 mx-16 mb-8">
                 I speak ...
             </h1>
-            <div className="grid grid-cols-4 gap-4 mx-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mx-4">
                     { languages.map((language) => {
                         return   (
                             <div className="card bg-base-100 shadow-xl">
@@ -27,7 +27,7 @@ export default function Skills(){
                 I use ...
             </h1>
 
-            <div className="grid grid-cols-4 gap-4 mx-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mx-4">
                 { tools.map((tool) => {
                     return   (
                         <div className="card bg-base-100 shadow-xl ">

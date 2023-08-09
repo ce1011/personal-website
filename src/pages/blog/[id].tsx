@@ -50,8 +50,8 @@ export default function PostsPage({ post }: InferGetServerSidePropsType<typeof g
                 </div>
                 <div className="flex-1">
                     <a className="btn btn-ghost normal-case text-xl">          <Typewriter
-                        words={['Paco的網絡迷途小角落', 'Paco\'s Niche Corner of the Internet', 'Paco之網絡幽徑幼隅', '\n' +
-                        'Paco\'s Cyber Maze Nook']}
+                        words={['Paco的網絡迷途小角落', 'Paco之網絡幽徑幼隅',
+                      ]}
                         loop={5}
                         cursor
                         cursorStyle='|'

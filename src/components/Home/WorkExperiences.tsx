@@ -6,7 +6,7 @@ export default function WorkExperience() {
 
 
     return (
-        <div className="bg-base-200 text-base-content min-h-screen grid-cols-3 gap-4 grid snap-start" >
+        <div className="bg-base-200 text-base-content min-h-screen grid-cols-1 md:grid-cols-3 gap-4 grid snap-start" >
             <div className="col-span-1 sm:invisible md:visible">
                 <Image
                     src="/side-banner.png"
@@ -17,8 +17,8 @@ export default function WorkExperience() {
                     style={{ width: '100%', height: '100vh' }}
                 />
             </div>
-            <div className="sm:col-span-3 md:col-span-2 min-h-screen divide-y-2 content-center mx-4" >
-                <h1 className="text-6xl mb-20 mt-16">
+            <div className="sm:col-span-3 md:col-span-2 min-h-screen divide-y-2 content-center mx-16 md:mx-4 " >
+                <h1 className="text-6xl md:mb-20 md:mt-16 my-10">
                     Experience
                 </h1>
 

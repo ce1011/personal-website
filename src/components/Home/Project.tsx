@@ -10,8 +10,8 @@ export default function Project(){
 
             <div className="grid grid-cols-1 flex items-center justify-center">
                 <h1 className="text-6xl pt-20 mx-16 mb-8">Works</h1>
-                <div className="grid grid-cols-3 gap-8 my-32 mx-8">
-                    <div className="card h-112 shadow-xl ">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-32 mx-8">
+                    <div className="card h-112 shadow-xl shadow-blue-300/30 ">
                         <figure><img src="/projects/music-transcript/1.jpg" alt="car!"/></figure>
                         <div className="card-body">
                             <h2 className="card-title">YOLO based music transcription</h2>
@@ -24,7 +24,7 @@ export default function Project(){
                             </div>
                         </div>
                     </div>
-                    <div className="card h-112 shadow-xl">
+                    <div className="card h-112 shadow-xl shadow-blue-300/30">
                         <figure><img src="/projects/pics/2.png" alt="car!" className="object-cover"/></figure>
                         <div className="card-body">
                             <h2 className="card-title">PicS</h2>
@@ -35,7 +35,7 @@ export default function Project(){
                             </div>
                         </div>
                     </div>
-                    <div className="card h-128 shadow-xl">
+                    <div className="card h-128 shadow-xl shadow-blue-300/30">
                         <figure><img src="/projects/add-drop-helper/img.png" alt="car!"/></figure>
                         <div className="card-body">
                             <h2 className="card-title">Course Add Drop helper</h2>

@@ -8,19 +8,19 @@ export default function ContactMe(){
         <div className="grid" >
             <div className="bg-base-200 text-base-content min-h-screen snap-start gap-4 justify-center flex items-center" id="contactme">
                 <div className="grid grid-cols-1 min-h-screen w-128 flex items-center justify-center">
-                    <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div className="w-full max-w-sm md:bg-white bg-transparent md:border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
 
                         <div className="flex flex-col items-center pb-10">
                             <img className="w-24 h-24 my-3 rounded-full shadow-lg"
                                  src="https://media.licdn.com/dms/image/D5635AQFYugXPBxlfIQ/profile-framedphoto-shrink_400_400/0/1687393304089?e=1691910000&v=beta&t=tXqhK3d5C43KMW2KlYnC8ZZiO4L0pDfOGC60CEzRkjw" alt="Bonnie image"/>
-                            <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Paco Au-Yeung</h5>
-                            <span className="text-sm text-gray-500 dark:text-gray-400">Software Developer</span>
+                            <h5 className="mb-1 text-xl font-medium md:text-gray-900 text-white dark:text-white">Paco Au-Yeung</h5>
+                            <span className="text-sm md:text-gray-500 dark:text-gray-400 text-white">Software Developer</span>
                             <div className="grid grid-cols-3 mt-3 gap-4">
 
-                                  <a href="https://www.linkedin.com/in/paco-au-yeung/"><FaLinkedin size="24" className="h-12 text-black"/></a>
+                                  <a href="https://www.linkedin.com/in/paco-au-yeung/"><FaLinkedin size="24" className="h-12 md:text-black text-white"/></a>
 
-                                <a href="mailto:paco20071001@gmail.com"><IoMailSharp size="24" className="h-12 text-black"/></a>
-                                <a href="https://www.github.com/ce1011"><FaGithub size="24" className="h-12 text-black"/></a>
+                                <a href="mailto:paco20071001@gmail.com"><IoMailSharp size="24" className="h-12 md:text-black text-white"/></a>
+                                <a href="https://www.github.com/ce1011"><FaGithub size="24" className="h-12 md:text-black text-white"/></a>
 
                             </div>
                             {/*<div className="flex mt-4 space-x-3 md:mt-6">*/}
